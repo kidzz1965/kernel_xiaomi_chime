@@ -497,7 +497,7 @@ static const struct apsd_result smblib_apsd_results[] = {
 	[SDP] = {
 		.name	= "SDP",
 		.bit	= SDP_CHARGER_BIT,
-		.pst	= POWER_SUPPLY_TYPE_USB
+		.pst	= POWER_SUPPLY_TYPE_USB_DCP
 	},
 	[CDP] = {
 		.name	= "CDP",

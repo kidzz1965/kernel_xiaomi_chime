@@ -392,11 +392,12 @@
 
 		/* reserve for pstore */
 		pstore: ramoops@64000000 {
-			compatible = "ramoops";
-			reg = <0x0 0x64000000 0x0 0x400000>;
-			console-size	= <0x100000>;
-			record-size = <0x100000>;
-			pmsg-size = <0x200000>;
+		        compatible = "ramoops";
+		        reg = <0x0 0x64000000 0x0 0x400000>;
+		        console-size = <0x00080000>;
+		        record-size  = <0x00080000>;
+		        pmsg-size    = <0x00200000>;
+		        status = "ok";
 		};
 
 		cont_splash_memory: cont_splash_region@5c000000 {
